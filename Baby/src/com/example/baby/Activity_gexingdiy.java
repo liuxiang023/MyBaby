@@ -13,7 +13,7 @@ public class Activity_gexingdiy extends Activity{
 protected void onCreate(Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
 	super.onCreate(savedInstanceState);
-	setContentView(R.layout.activity_gexindiy);
+	setContentView(R.layout.activity_xiangcehuiyi);
 /*	btn=(Button)findViewById(R.id.btn_back3);
 	btn2=(Button)findViewById(R.id.btn_addimg);
 	btn.setOnClickListener(onClickListener);*/

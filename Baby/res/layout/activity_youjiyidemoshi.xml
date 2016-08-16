@@ -5,36 +5,39 @@
     android:orientation="vertical" >
        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="#ff5d5e"
         android:orientation="horizontal" >
 
         <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
+            android:id="@+id/btn_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@null"
             android:src="@drawable/btn_bacak" 
-            android:id="@+id/btn_back2"/>
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="18dp"/>
 
         <TextView
-            android:layout_width="0dp"
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
+            android:layout_marginTop="8dp"
             android:gravity="center"
             android:text="育儿笔记"
             android:textColor="#ffffff"
-            android:textSize="22sp" />
+            android:textSize="20sp" 
+            android:layout_marginLeft="100dp"/>
 
         <Button
-            android:layout_width="0dp"
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_weight="1"
+            android:layout_marginTop="9dp"
             android:background="@null"
             android:text="编辑"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff" 
+            android:layout_marginLeft="70dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -93,38 +96,12 @@
             android:text="相册回忆"
             android:textColor="#7c7c7c" />
     </LinearLayout>
-    <LinearLayout 
+    <ListView
         android:layout_width="fill_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical">
-        <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2016-06-05"
-            android:textColor="#bbbbbb"/>
-        <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="支到试用佳贝艾特婴女配圆羊奶粉时，我宝正谦九个月，正正在准备断母乳了，但是一背母乳的卧冬对奶粉狄住择是一面经历皆出有. "
-            android:singleLine="false"
-			android:textSize="15sp"
-		/>
-           <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2016-06-05"
-            android:textColor="#bbbbbb"
-            android:layout_marginTop="10dp"/>
-        <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="支到试用佳贝艾特婴女配圆羊奶粉时，我宝正谦九个月，正正在准备断母乳了，但是一背母乳的卧冬对奶粉狄住择是一面经历皆出有. "
-            android:singleLine="false"
-			android:textSize="15sp"
-		/>
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_wenzihuiyi">
         
-    </LinearLayout>
+    </ListView>
      <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="100dp"

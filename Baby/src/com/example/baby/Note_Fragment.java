@@ -22,7 +22,7 @@ import android.widget.TextView;
 
 public class Note_Fragment extends Fragment {
 	private ImageButton btn,btn3,btn4;
-	private Button btn2;
+	private Button btn2,btn5;
 	private ListView list;
 	private List<Map<String,Object>> Data;
 	@Override
@@ -33,9 +33,11 @@ public class Note_Fragment extends Fragment {
 	btn=(ImageButton)view.findViewById(R.id.btn_wenzihuiyi);
 	btn3=(ImageButton)view.findViewById(R.id.btn_diyhuiyi);
 	btn4=(ImageButton)view.findViewById(R.id.btn_xiangce);
+	btn5=(Button)view.findViewById(R.id.btn_addtext);
 		btn.setOnClickListener(onClickListener);
 		btn3.setOnClickListener(onClickListener);
 		btn4.setOnClickListener(onClickListener);
+		btn5.setOnClickListener(onClickListener);
 		return view;
 		
 	};
@@ -145,16 +147,16 @@ public class Note_Fragment extends Fragment {
 			// TODO Auto-generated method stub
 			switch(v.getId())
 			{
-			case R.id.btn_wenzihuiyi:
+			case R.id.btn_addtext:
 				Intent intent =new Intent( getActivity(),Activity_fabiaojiyi.class);
 				startActivity(intent);
 				break;
 			case R.id.btn_diyhuiyi:
-				Intent intent2 =new Intent( getActivity(),Activity_xiangcehuiyi.class);	
+				Intent intent2 =new Intent( getActivity(),Activity_gexingdiy.class);	
 				startActivity(intent2);
 				break;
 			case R.id.btn_xiangce:
-				Intent intent3 =new Intent(getActivity(),Activity_gexingdiy.class);	
+				Intent intent3 =new Intent(getActivity(),Activity_xiangcehuiyi.class);	
 				startActivity(intent3);
 			}
 		}
