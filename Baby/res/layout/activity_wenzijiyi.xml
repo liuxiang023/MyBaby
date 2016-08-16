@@ -51,7 +51,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@null"
+            android:background="@drawable/btn_bg"
             android:src="@drawable/home_bth" />
 
         <ImageButton
@@ -103,6 +103,11 @@
             android:text="相册回忆"
             android:textColor="#7c7c7c" />
     </LinearLayout>
+    <View 
+        android:layout_marginTop="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#696969"/>
 
     <RelativeLayout
         android:layout_width="fill_parent"
