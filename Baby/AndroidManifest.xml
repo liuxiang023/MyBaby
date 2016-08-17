@@ -20,6 +20,8 @@
             android:name=".LiaoTianActivity"></activity>
         <activity
             android:name=".TalkingAboutActivity"></activity>
+         <activity
+            android:name="com.example.baby.Note_Fragment"></activity>
         <activity
             android:name="com.example.baby.Activity_fabiaojiyi"></activity>
         <activity
