@@ -3,35 +3,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
      <RelativeLayout
-        android:background="#FF5D5E"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp" >
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:background="#FF5D5E" >
 
-        <ImageView 
-            android:src="@drawable/zoujiantou"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp" />
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:src="@drawable/zoujiantou" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="育儿笔记"
-            android:textColor="#84FFFF"
-            android:textSize="18sp" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:text="编辑"
+             android:textColor="#84FFFF" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:textColor="#84FFFF"
-            android:text="编辑" />
-    </RelativeLayout>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="95dp"
+             android:layout_toRightOf="@+id/imageView1"
+             android:text="育儿笔记"
+             android:textColor="#84FFFF"
+             android:textSize="18sp" />
+     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,7 +71,7 @@
 
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="#C6C6C6" />
 
     <LinearLayout
@@ -76,8 +80,8 @@
         android:orientation="horizontal" >
 
         <ImageView
-            android:layout_width="111dp"
-            android:layout_height="143dp"
+            android:layout_width="101dp"
+            android:layout_height="123dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:src="@drawable/mei" />
@@ -93,8 +97,8 @@
         android:orientation="horizontal" >
 
         <ImageView
-            android:layout_width="111dp"
-            android:layout_height="143dp"
+            android:layout_width="101dp"
+            android:layout_height="123dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:src="@drawable/mei" />
@@ -106,7 +110,7 @@
     </LinearLayout>
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_marginTop="10dp"
         android:background="#C6C6C6" />
 
@@ -118,11 +122,12 @@
             android:id="@+id/tianjiatupian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:background="@drawable/yuan_baocun"
-            android:text="添加图片" 
-            android:textColor="#84FFFF"
-            />
+            android:text="添加图片"
+            android:textColor="#84FFFF" />
+
     </RelativeLayout>
 
     <LinearLayout

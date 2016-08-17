@@ -4,96 +4,78 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+     <RelativeLayout
+        android:background="#FF5D5E"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <ImageView 
+            android:id="@+id/fanhui_view"
+            android:src="@drawable/zoujiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/yuerbiji_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="育儿笔记"
+            android:textColor="#84FFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bianji_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#84FFFF"
+            android:text="编辑" />
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ff5d5e"
+        android:layout_margin="10dp"
         android:orientation="horizontal" >
 
-        <ImageButton
+        <TextView
+            android:id="@+id/wenzihuiyi_view"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/btn_bacak" 
-            android:id="@+id/btn_back3"/>
+            android:drawableTop="@drawable/wenzihuiyi"
+            android:gravity="center"
+            android:text="文字回忆" />
 
         <TextView
+            android:id="@+id/diy_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:drawableTop="@drawable/diy"
             android:gravity="center"
-            android:text="育儿笔记"
-            android:textColor="#ffffff"
-            android:textSize="22sp" />
+            android:text="个性DIY回忆" />
 
-        <Button
+        <TextView
+            android:id="@+id/xiangcehuiyi_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:layout_weight="1"
-            android:background="@null"
-            android:text="编辑"
-            android:textColor="#ffffff" />
+            android:drawableTop="@drawable/xiangcehuiyi"
+            android:gravity="center"
+            android:text="相册回忆" />
+
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/home_bth" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/hom" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/home" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="文字回忆"
-            android:textColor="#7c7c7c" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="个性DIY回忆"
-            android:textColor="#7c7c7c" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="相册回忆"
-            android:textColor="#7c7c7c" />
-    </LinearLayout>
+        android:layout_height="1dp"
+        android:background="#C6C6C6" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -112,11 +94,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text"
-            android:layout_centerInParent="true"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
             android:text="赶紧添加吧！"
             android:textColor="#bbbbbb"
             android:textSize="15sp" />
+
     </RelativeLayout>
     <RelativeLayout 
         android:layout_width="fill_parent"
