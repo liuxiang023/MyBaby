@@ -8,9 +8,9 @@
     
 
     <padding
-        android:bottom="10dp"
-        android:left="80dp"
-        android:right="80dp"
-        android:top="10dp" />
+        android:bottom="110dp"
+        android:left="110dp"
+        android:right="110dp"
+        android:top="110dp" />
 
 </shape>
