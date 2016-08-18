@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-       <LinearLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="#ff5d5e"
@@ -13,94 +14,116 @@
             android:id="@+id/btn_back2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@null"
-            android:src="@drawable/btn_bacak" 
+            android:layout_marginLeft="18dp"
             android:layout_marginTop="9dp"
-            android:layout_marginLeft="18dp"/>
+            android:background="@null"
+            android:src="@drawable/btn_bacak" />
 
         <TextView
             android:id="@+id/textview_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
             android:layout_marginTop="8dp"
             android:gravity="center"
             android:text="育儿笔记"
             android:textColor="#ffffff"
-            android:textSize="20sp" 
-            android:layout_marginLeft="100dp"/>
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/btn_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="9dp"
             android:background="@null"
             android:text="编辑"
-            android:textColor="#ffffff" 
-            android:layout_marginLeft="70dp"/>
+            android:textColor="#ffffff" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:id="@+id/id_switch_tab_ll"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <ImageButton
+        <LinearLayout
+            android:id="@+id/id_tab_chat_ll"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/home_bth" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
 
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/hom" />
+            <TextView
+                android:id="@+id/btn_wenzihuiyi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableTop="@drawable/home_bth"
+                android:gravity="center"
+                android:text="文字回忆" />
+        </LinearLayout>
 
-        <ImageButton
+        <LinearLayout
+            android:id="@+id/id_tab_friend_ll"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@null"
-            android:src="@drawable/home" />
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:saveEnabled="false" >
+
+            <TextView
+                android:id="@+id/btn_diyhuiyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableTop="@drawable/hom"
+                android:gravity="center"
+                android:text="个性DIY记忆" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_contacts_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/btn_xiangce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableTop="@drawable/hom"
+                android:gravity="center"
+                android:text="相册记忆" />
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
+    <ImageView
+        android:id="@+id/id_tab_line_iv"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="文字回忆"
-            android:textColor="#7c7c7c" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="个性DIY回忆"
-            android:textColor="#7c7c7c" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="相册回忆"
-            android:textColor="#7c7c7c" />
-    </LinearLayout>
+        android:background="@drawable/tab_selected_pressed_holo"
+        android:contentDescription="tab" >
+    </ImageView>
     <ListView
+        android:id="@+id/listview_wenzihuiyi"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listview_wenzihuiyi">
-        
+        android:layout_height="wrap_content" >
     </ListView>
+
    
 </LinearLayout>
+
+
+
+
