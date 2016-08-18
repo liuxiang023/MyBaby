@@ -73,7 +73,7 @@
 
     <TextView
         android:layout_width="fill_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="#C6C6C6" />
 
     <LinearLayout
@@ -82,8 +82,8 @@
         android:orientation="vertical" >
 
         <ImageView
-            android:layout_width="111dp"
-            android:layout_height="143dp"
+            android:layout_width="211dp"
+            android:layout_height="183dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:src="@drawable/mei" />
@@ -113,10 +113,12 @@
             android:id="@+id/baocun_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:background="@drawable/yuan_baocun"
             android:text="保存"
             android:textColor="#84FFFF" />
+
     </RelativeLayout>
 
 

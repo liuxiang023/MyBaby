@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 
 public class Xiangcehuiyi_Activity extends Activity{
-	ImageView fanhui;
+	/*ImageView fanhui;
 	TextView yuerbiji;
 	TextView bianji;
 	TextView wenzihuiyi;
@@ -19,13 +19,13 @@ public class Xiangcehuiyi_Activity extends Activity{
 	TextView xiangcehuiyi;
 	TextView shouye;
 	TextView biji;
-	TextView wode;
+	TextView wode;*/
 	Button baocun;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.xiangcehuiyi);
-		fanhui = (ImageView) findViewById(R.id.fanhui_view);
+		/*fanhui = (ImageView) findViewById(R.id.fanhui_view);
 		fanhui.setOnClickListener(l);
 		yuerbiji = (TextView) findViewById(R.id.yuerbiji_view);
 		yuerbiji.setOnClickListener(l);
@@ -42,7 +42,7 @@ public class Xiangcehuiyi_Activity extends Activity{
 		biji = (TextView) findViewById(R.id.biji_view);
 		biji.setOnClickListener(l);
 		wode = (TextView) findViewById(R.id.wode_view);
-		wode.setOnClickListener(l);
+		wode.setOnClickListener(l);*/
 		baocun = (Button) findViewById(R.id.baocun_button);
 		baocun.setOnClickListener(l);
 
@@ -54,7 +54,7 @@ public class Xiangcehuiyi_Activity extends Activity{
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			switch (v.getId()) {
-			case R.id.fanhui_view:
+			/*case R.id.fanhui_view:
 				break;
 			case R.id.yuerbiji_view:
 				break;
@@ -79,8 +79,10 @@ public class Xiangcehuiyi_Activity extends Activity{
 			case R.id.wode_view:
 				Intent intent1=new Intent(Xiangcehuiyi_Activity.this,Text_shouye.class);
 				startActivity(intent1);
-				break;
+				break;*/
 			case R.id.baocun_button:
+				Intent intent=new Intent(Xiangcehuiyi_Activity.this,Tiao_yemiao_xf.class);
+				   startActivity(intent);
 				break;
 			}
 		}
