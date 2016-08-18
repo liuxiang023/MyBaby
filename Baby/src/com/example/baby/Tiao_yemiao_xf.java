@@ -8,6 +8,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import android.widget.Toast;
 public class Tiao_yemiao_xf extends Activity{
 	TextView textview;
 	Button button;
+	ImageView image;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -25,6 +27,8 @@ public class Tiao_yemiao_xf extends Activity{
 		textview.setOnClickListener(l);
 		button=(Button) findViewById(R.id.tianjiatupian);
 		button.setOnClickListener(l);
+		image=(ImageView) findViewById(R.id.fanhui_view1);
+		image.setOnClickListener(l);
 		
 	}
 OnClickListener l =new OnClickListener() {
@@ -39,6 +43,11 @@ OnClickListener l =new OnClickListener() {
 			Intent intent=new Intent(Tiao_yemiao_xf.this,Xiangcehuiyi_Activity.class);
 			startActivity(intent);
 			break;*/
+		case R.id.fanhui_view1:
+			Intent intent=new Intent(Tiao_yemiao_xf.this,Note_Fragment.class);
+			startActivity(intent);
+			break;
+		
 		case R.id.tianjiatupian:
 			
 			

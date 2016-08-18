@@ -4,37 +4,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+
      <RelativeLayout
         android:background="#FF5D5E"
-        android:layout_width="fill_parent"
+         android:layout_width="fill_parent"
         android:layout_height="50dp" >
+        
 
-        <ImageView 
-            android:id="@+id/fanhui_view"
-            android:src="@drawable/zoujiantou"
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff5d5e"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp" />
+            android:background="@null"
+            android:src="@drawable/btn_bacak" 
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="18dp"/>
 
         <TextView
-            android:id="@+id/yuerbiji_view"
+            android:id="@+id/textview_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
             android:text="育儿笔记"
-            android:textColor="#84FFFF"
-            android:textSize="18sp" />
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:layout_marginLeft="100dp"/>
 
-        <TextView
-            android:id="@+id/bianji_view"
+        <Button
+            android:id="@+id/btn_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:textColor="#84FFFF"
-            android:text="编辑" />
+            android:layout_marginTop="9dp"
+            android:background="@null"
+            android:text="编辑"
+            android:textColor="#ffffff" 
+            android:layout_marginLeft="70dp"/>
+    </LinearLayout>
+
+    
+
+        
+
+        
     </RelativeLayout>
 
     <LinearLayout
@@ -79,7 +97,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="200dp" 
+        android:layout_height="240dp" 
         android:layout_marginTop="15dp">
 
         <TextView
@@ -104,11 +122,12 @@
     <RelativeLayout 
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
     <Button 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:text="添加图片"
+        android:textSize="15sp"
         android:layout_centerInParent="true"
         android:textColor="#ffffff"
         android:background="@drawable/btn_bacakground"

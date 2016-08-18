@@ -13,7 +13,7 @@ public class Activity_xiangcehuiyi extends Activity{
 protected void onCreate(Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
 	super.onCreate(savedInstanceState);
-	setContentView(R.layout.activity_xiangcehuiyi);
+	setContentView(R.layout.activity_gexindiy);
 	//btn.setOnClickListener(clickListener);
 }
 OnClickListener clickListener=new OnClickListener() {
@@ -21,7 +21,11 @@ OnClickListener clickListener=new OnClickListener() {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		Intent intent=new Intent(Activity_xiangcehuiyi.this,Note_Fragment.class);
+		
+		
+		
+        
+        Intent intent=new Intent(Activity_xiangcehuiyi.this,Note_Fragment.class);
 		startActivity(intent);
 	}
 };

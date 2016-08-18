@@ -20,6 +20,8 @@
             android:name=".LiaoTianActivity"></activity>
         <activity
             android:name=".TalkingAboutActivity"></activity>
+         <activity
+            android:name="com.example.baby.Note_Fragment"></activity>
         <activity
             android:name="com.example.baby.Activity_fabiaojiyi"></activity>
         <activity
@@ -32,9 +34,15 @@
         <activity
             android:name="com.example.baby.Text_shouye"></activity>
         <activity
-            android:name="com.example.baby.Tiao_yemiao_xf"></activity>
+            android:name="com.example.baby.Tiao_yemiao_xf"
+            android:launchMode="singleTask" 
+            >
+            
+        </activity>
         <activity
-            android:name="com.example.baby.Xiangcehuiyi_Activity"></activity>
+            android:name="com.example.baby.Xiangcehuiyi_Activity"
+            android:launchMode="singleTask" 
+            ></activity>
         <activity
             android:name="com.example.baby.Zhuye_xf"></activity>
         <activity

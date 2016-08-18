@@ -21,6 +21,7 @@ public class Xiangcehuiyi_Activity extends Activity{
 	TextView biji;
 	TextView wode;*/
 	Button baocun;
+	ImageView image;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -45,6 +46,8 @@ public class Xiangcehuiyi_Activity extends Activity{
 		wode.setOnClickListener(l);*/
 		baocun = (Button) findViewById(R.id.baocun_button);
 		baocun.setOnClickListener(l);
+		image=(ImageView) findViewById(R.id.fanhui_view);
+		image.setOnClickListener(l);
 
 	}
 
@@ -83,6 +86,10 @@ public class Xiangcehuiyi_Activity extends Activity{
 			case R.id.baocun_button:
 				Intent intent=new Intent(Xiangcehuiyi_Activity.this,Tiao_yemiao_xf.class);
 				   startActivity(intent);
+				break;
+			case R.id.fanhui_view:
+				Intent intent2=new Intent(Xiangcehuiyi_Activity.this,Activity_gexingdiy.class);
+				startActivity(intent2);
 				break;
 			}
 		}

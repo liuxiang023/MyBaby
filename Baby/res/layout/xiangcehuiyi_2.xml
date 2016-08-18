@@ -10,7 +10,7 @@
          android:background="#FF5D5E" >
 
          <ImageView
-             android:id="@+id/imageView1"
+             android:id="@+id/fanhui_view1"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_centerVertical="true"
@@ -29,9 +29,9 @@
          <TextView
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:layout_centerVertical="true"
+             android:layout_centerInParent="true"
              android:layout_marginLeft="95dp"
-             android:layout_toRightOf="@+id/imageView1"
+             
              android:text="育儿笔记"
              android:textColor="#84FFFF"
              android:textSize="18sp" />
@@ -96,12 +96,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <ImageView
-            android:layout_width="101dp"
-            android:layout_height="123dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@drawable/mei" />
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="123dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/mei" />
 
         <EditText
             android:layout_width="fill_parent"
@@ -121,7 +120,7 @@
         <Button
             android:id="@+id/tianjiatupian"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="@drawable/yuan_baocun"
@@ -130,37 +129,7 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="horizontal" 
-        android:background="#efefef"
-        >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/shouye"
-            android:gravity="center"
-            android:text="首页" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/yuer"
-            android:gravity="center"
-            android:text="育儿笔记" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableTop="@drawable/touxiang"
-            android:gravity="center"
-            android:text="我的" />
-    </LinearLayout>
+   
     
 
 </LinearLayout>
